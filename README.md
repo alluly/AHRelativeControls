@@ -14,7 +14,7 @@ You can feel when you leave a physical button; on a touch screen, everything fee
 AHRelControls is basically a CCLayer that goes on top of your game later. Add it as a child and use the delegate methods to work with your character.
 
 ###Usage
-=========
+
 Import three files `AHRelControls.h AhRelControls.m AHRelControlsDelegate.h`
 
 Initalize the controls by specifying the boundaries by which the character should always move left, right. 
