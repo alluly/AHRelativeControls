@@ -19,24 +19,24 @@ Import three files `AHRelControls.h AhRelControls.m AHRelControlsDelegate.h`
 
 Initalize the controls by specifying the boundaries by which the character should always move left, right. 
 
-`AHRelControls *controls = [[AHRelControls alloc] initWithCertainLeftBound:25 rightBound:230];
- controls.position = CGPointZero;
- controls.delegate = self; 
- [self addChild:controls z:10];`
+    AHRelControls *controls = [[AHRelControls alloc] initWithCertainLeftBound:25 rightBound:230];
+    controls.position = CGPointZero;
+    controls.delegate = self; 
+    [self addChild:controls z:10];
  
  Add the delegate methods:
- `#pragma mark Controls Delegate
+ 
+    #pragma mark Controls Delegate
+    
+    -(void)moveRight:(CGPoint)point
+    {
+      CCLOG(@"right");
+    }
+    -(void)moveLeft:(CGPoint)point
+    {
+      CCLOG(@"left");
+    }
 
--(void)moveRight:(CGPoint)point
-{
-    CCLOG(@"right");
-}
-
--(void)moveLeft:(CGPoint)point
-{
-    CCLOG(@"left");
-}
-`
 Right and Left are the only required ones, everything else is optional.
 
 ###Todo
