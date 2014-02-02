@@ -42,4 +42,7 @@ Right and Left are the only required ones, everything else is optional.
 ###Todo
 
 The controls are really basic at the moment. One of the best things to add would be an onboarding sequence that demonstrates how the controls work. Some users find confusion with the controls; a good tutorial should alleviate this. 
+
 The algorithm for determining slides, relative touches, relative a/b touches could use some polishing. If anyone would like to contribute, that would be great!
+
+I also need to add an example project with implementation.
